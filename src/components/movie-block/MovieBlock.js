@@ -7,8 +7,8 @@ import MovieLoading from "../movie-loading/MovieLoading";
 import MovieError from "../movie-error/MovieError";
 
 const MovieBlock = (props) => {
-    const loading = props.loading ? <MovieLoading /> : null;
-    const error = props.error ? <MovieError /> : null;
+    let loading = props.loading ? <MovieLoading /> : null;
+    let error = props.error ? <MovieError /> : null;
     let isMessage;
     switch (props.data.title) {
         case undefined:
@@ -19,7 +19,7 @@ const MovieBlock = (props) => {
             break;
     }
     let message;
-    if (loading == false) {
+    if (isMessage == true && props.loading == false) {
         message = isMessage ? <h1 className="message">Movie not found</h1> : null;
     }
     const content = !(props.loading || props.error || isMessage) ? <View data={props.data} /> : null;
