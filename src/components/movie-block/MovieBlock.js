@@ -18,7 +18,10 @@ const MovieBlock = (props) => {
             isMessage = false;
             break;
     }
-    const message = isMessage ? <h1 className="message">Movie not found</h1> : null;
+    let message;
+    if (loading == false) {
+        message = isMessage ? <h1 className="message">Movie not found</h1> : null;
+    }
     const content = !(props.loading || props.error || isMessage) ? <View data={props.data} /> : null;
 
     return (
