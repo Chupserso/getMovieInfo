@@ -1,0 +1,109 @@
+.movie-properties {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.movie-logotype {
+    width: 250px;
+}
+.movie-logotype img {
+    width: 100%;
+    height: 100%;
+}
+.movie-content {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.movie-title {
+    margin-top: 10px;
+    font-family: 100px;
+}
+.movie-title h2 {
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.movie-rating-icon {
+    width: 25px;
+    height: 25px;
+}
+.movie-rating-icon img {
+    width: 100%;
+    height: 100%;
+}
+.movie-rating {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.movie-rating-text {
+    color: #fff;
+    margin-left: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.movie-date-properties {
+    margin-top: 15px;
+    min-width: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.movie-date-property {
+    color: #ababab;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.movie-genres {
+    margin-top: 15px;
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #d7d7d7;
+}
+@media screen and (max-width:840px) {
+    .movie-content {
+        width: 250px;
+    }
+}
+@media screen and (max-width:540px) {
+    .movie-logotype {
+        width: 200px;
+    }
+    .movie-content {
+        width: 200px;
+    }
+    .movie-genres {
+        width: 180px;
+    }
+}
+@media screen and (max-width:440px) {
+    .movie-logotype {
+        width: 200px;
+    }
+    .movie-content {
+        width: 150px;
+    }
+    .movie-genres {
+        width: 140px;
+    }
+    .movie-genre {
+        padding: 5px;
+    }
+}
+@media screen and (max-width:370px) {
+    .movie-logotype {
+        width: 130px;
+    }
+    .movie-content {
+        width: 140px;
+    }
+    .movie-genres {
+        width: 130px;
+    }
+}

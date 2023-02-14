@@ -1,0 +1,39 @@
+.movie-block {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    padding: 20px;
+    background: linear-gradient(rgb(0, 0, 10), rgb(51, 51, 51));
+    min-height: 600px;
+}
+.message {
+    color: #fff;
+    text-align: center;
+    margin-top: 40px;
+}
+@media screen and (max-width:840px) {
+    .movie-block {
+        width: 500px;
+    }
+}
+@media screen and (max-width:540px) {
+    .movie-block {
+        width: 400px;
+    }
+}
+@media screen and (max-width:440px) {
+    .movie-block {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 350px;
+    }
+}
+@media screen and (max-width:370px) {
+    .movie-block {
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 270px;
+    }
+}
