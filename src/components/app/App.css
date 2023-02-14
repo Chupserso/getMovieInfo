@@ -6,14 +6,7 @@ body {
     animation: scroll 70s linear infinite;
     background: url(../../resources/img/fone.jpg), #111111;
     background-size: cover;
-    perspective: 1000px;
-    perspective-origin: 50% 50%;
-}
-@keyframes scroll {
-    100%{
-     background-position:0px -2000px;
-    }
 }
 .wrapper {
-    min-height: 100vh;
+    height: 100vh;
 }
