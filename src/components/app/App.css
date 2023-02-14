@@ -3,10 +3,6 @@
     margin: 0px;
 }
 body {
-    animation: scroll 70s linear infinite;
     background: url(../../resources/img/fone.jpg), #111111;
     background-size: cover;
-}
-.wrapper {
-    height: 100vh;
 }
