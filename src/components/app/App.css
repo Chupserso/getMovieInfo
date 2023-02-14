@@ -3,6 +3,12 @@
     margin: 0px;
 }
 body {
+    animation: scroll 70s linear infinite;
     background: url(../../resources/img/fone.jpg), #111111;
     background-size: cover;
+}
+@keyframes scroll {
+    100%{
+     background-position:0px -2000px;
+    }
 }
